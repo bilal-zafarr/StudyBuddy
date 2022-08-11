@@ -38,7 +38,10 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "base.apps.BaseConfig",
+    "rest_framework",
 ]
+
+AUTH_USER_MODEL = "base.User"
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -120,10 +123,11 @@ USE_TZ = True
 
 STATIC_URL = "static/"
 
-STATICFILES_DIRS = [
-    BASE_DIR / "static",
-]
+MEDIA_URL = "/images/"
 
+STATICFILES_DIRS = [BASE_DIR / "static"]
+
+MEDIA_ROOT = BASE_DIR / "static/images"
 # STATIC_ROOT =
 
 # Default primary key field type
