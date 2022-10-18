@@ -33,7 +33,6 @@ Here is a simple Django project that I made to practice Django. It allows you to
         
 * 6 - Run django server:
       
-      cd ./..
       python manage.py runserver
 
 ## Some Screens
